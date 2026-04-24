@@ -5,8 +5,9 @@ object luke{
     var cantVisitados = 0
     var ultimoRecuerdo = mate
 
+
     method viajar(unaCiudad){
-        if (vehiculo.puedeViajar(unaCiudad)){
+        if (unaCiudad.puedeSerVisitada(vehiculo)){
             cantVisitados += 1
             ultimoRecuerdo = unaCiudad.recuerdo()
         }

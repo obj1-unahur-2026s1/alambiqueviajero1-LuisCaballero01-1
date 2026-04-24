@@ -2,13 +2,11 @@ import recuerdos.*
 import ciudades.*
 object alambiqueVeloz {
     var combustible = 100
-    
+    method combustible() = combustible
     method esRapido() = true
 
-    method puedeViajar(unaCiudad){
-        if (unaCiudad.recuerdo() == paris.recuerdo()){ //muy mal
-            
-        }
-      
+    
+    method consumirCombustible(unaCantidad){
+      combustible = 0.max(combustible - unaCantidad)
     }
 }
